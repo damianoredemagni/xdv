@@ -91,6 +91,31 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.banner .twitter-tweet {
+    width: 100% !important;
+    max-width: 880px !important;
+}
+
+/* Add responsive adjustments */
+@media (max-width: 600px) {
+    .banner {
+        padding: 0;
+    }
+
+    .banner .twitter-tweet {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    /* Ensure the Twitter iframe contents resize properly */
+    .banner iframe {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
 }
 
 nav {
